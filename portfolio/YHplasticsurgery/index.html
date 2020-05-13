@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>연희 성형외과 디자인 시안</title>
+  </head>
+  <body>
+    <div id="main">
+      <h2>PC버전 디자인 시안</h2>
+      <img src="img/main_pc.jpg" alt="PC버전 메인 디자인" />
+      <img src="img/intro_pc.jpg" alt="PC버전 병원소개 디자인" />
+    </div>
+    <div id="mobile">
+      <h2>Mobile 버전 디자인 시안</h2>
+      <img src="img/main_mobile.jpg" alt="모바일 버전 디자인 디자인" />
+      <img srcset="img/intro_mobile.jpg" alt="모바일 버전 병원소개 디자인" />
+    </div>
+    <style>
+      h2 {
+        text-align: center;
+        font-weight: bold;
+        background: #000;
+        color: #fff;
+        padding: 30px 0;
+      }
+      #main img {
+        width: 100%;
+      }
+
+      #mobile img {
+        width: 45%;
+        float: left;
+        margin-right: 10%;
+      }
+
+      #mobile img:last-child {
+        margin-right: 0;
+      }
+    </style>
+  </body>
+</html>
