@@ -49,4 +49,4 @@ $(document).ready('on', function () {
       menu.eq(0).addClass("active").siblings().removeClass();
     }
   });
-});
+};
