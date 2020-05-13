@@ -49,4 +49,4 @@ $(docunemt).on('ready',function(){
       menu.eq(0).addClass("active").siblings().removeClass();
     }
   });
-});
+})
