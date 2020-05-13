@@ -1,4 +1,4 @@
-
+$(docunemt).on('ready',function(){
   // var
   var menu = $("#gnb li");
   var contents = $("#contents > section");
@@ -49,3 +49,4 @@
       menu.eq(0).addClass("active").siblings().removeClass();
     }
   });
+});
