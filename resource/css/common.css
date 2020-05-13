@@ -209,6 +209,11 @@ header h1 {
   -webkit-text-stroke: 0px;
 }
 
+/* contents 영역 */
+#contents {
+  width: 100%;
+  height: auto;
+}
 .h2 {
   padding-top: 130px;
   font-size: 2.5rem;
@@ -218,12 +223,12 @@ header h1 {
   text-align: center;
   font-family: "SC_bl";
 }
-
 /* Intro 영역 */
 #intro {
   text-align: center;
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 #intro > div {
