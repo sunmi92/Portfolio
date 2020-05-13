@@ -1,4 +1,10 @@
-$(document).on('ready',function(){
+$(document).ready(function () {
+  // Prealoder
+
+  $(window).on("load", function (event) {
+    $(".preloader").delay(500).fadeOut(500);
+  });
+
   // var
   var menu = $("#gnb li");
   var contents = $("#contents > section");
@@ -49,4 +55,4 @@ $(document).on('ready',function(){
       menu.eq(0).addClass("active").siblings().removeClass();
     }
   });
-})
+});
