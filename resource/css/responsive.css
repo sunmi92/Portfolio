@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@media (max-width: 1366px) {
+  .wrap {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  /* header 영역 */
+  h1 {
+    font-size: 1.4rem;
+  }
+  #gnb li {
+    font-size: 1rem;
+  }
+
+  .active {
+    font-size: 1.2rem !important;
+  }
+  /* contents 영역 */
+  .h2 {
+    padding-top: 80px;
+    font-size: 1.7rem;
+    line-height: 1.4;
+    margin-bottom: 5px;
+  }
+  /* Intro 영역 */
+
+  #intro i {
+    bottom: 2.7%;
+  }
+
+  /* About 영역 */
+  #about > p {
+    margin-bottom: 25px;
+  }
+
+  #about img {
+    width: 70%;
+    margin: 0 15% 25px;
+  }
+  #basic_info .title {
+    font-size: 0.8rem;
+  }
+
+  #basic_info .des {
+    font-size: 0.8rem;
+  }
+
+  #introduce .title {
+    font-size: 1.2rem;
+    margin: 5px 0 8px;
+  }
+
+  #introduce p {
+    font-size: 0.75rem;
+  }
+
+  #introduce p a {
+    font-size: 1rem;
+  }
+
+  .skill_bar {
+    height: 10px;
+  }
+
+  .progress_bar {
+    height: 10px;
+  }
+}

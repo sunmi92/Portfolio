@@ -1,0 +1,529 @@
+@charset "UTF-8";
+
+/* font open-source */
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+@font-face {
+  font-family: "SC_l";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff");
+}
+
+@font-face {
+  font-family: "SC_r";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff");
+}
+
+@font-face {
+  font-family: "SC_m";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff");
+}
+
+@font-face {
+  font-family: "SC_b";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff");
+}
+@font-face {
+  font-family: "SC_bl";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff");
+}
+
+/* basic seeting */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: SC_r;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* display - class */
+.hidden {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+
+/* position - class */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.absolute_left {
+  position: absolute;
+  left: 0;
+}
+
+.absolute_right {
+  position: absolute;
+  right: 0;
+}
+
+.absolute_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+/* before & after - class */
+.before:before {
+  content: "";
+  display: block;
+}
+.after:after {
+  content: "";
+  display: block;
+}
+
+/* font-family - class */
+.poppins {
+  font-family: "Poppins", Arial, sans-serif;
+}
+.SC_bl {
+  font-family: "SC_bl";
+}
+.SC_b {
+  font-family: "SC_b";
+}
+.SC_m {
+  font-family: "SC_m";
+}
+.SC_r {
+  font-family: "SC_r";
+}
+.SC_l {
+  font-family: "SC_l";
+}
+
+/* text-aline - class */
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+/* background - class */
+.b_yellow {
+  background: rgb(255, 255, 5);
+}
+.b_grey {
+  background: #ccc;
+}
+.b_blue {
+  background: rgb(0, 41, 250);
+}
+/* color - class */
+.f_black {
+  color: #333;
+}
+.f_purple {
+  color: rgb(141, 7, 246);
+}
+.f_grey {
+  color: #ccc;
+}
+.f_blue {
+  color: rgb(0, 41, 250);
+}
+.f_white {
+  color: #fff;
+}
+.active {
+  color: rgb(141, 7, 246);
+  font-family: SC_bl;
+  font-size: 1.5rem !important;
+  text-transform: uppercase;
+}
+/* header 영역 */
+
+header {
+  width: 100%;
+  height: 10%;
+  transition: 0.3s;
+}
+header .wrap {
+  height: 100%;
+}
+
+.h_fixed {
+  position: fixed;
+  background: #fff !important;
+  color: #333 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+header h1 {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#gnb {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+#gnb li {
+  display: inline-block;
+  margin-left: 40px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  -webkit-text-stroke: 1px rgb(141, 7, 246);
+}
+
+.h_fixed #gnb li {
+  -webkit-text-stroke: 0px;
+}
+
+/* contents 영역 */
+#contents {
+  width: 100%;
+  height: auto;
+}
+.h2 {
+  padding-top: 130px;
+  font-size: 2.5rem;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  color: rgb(141, 7, 246);
+  text-align: center;
+  font-family: "SC_bl";
+}
+/* Intro 영역 */
+#intro {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#intro > div {
+  width: 100%;
+  height: 100%;
+}
+#intro > div p {
+  font-size: 2rem;
+  padding-bottom: 15px;
+}
+#intro > div div {
+  width: 100%;
+  top: 50%;
+  transform: translateY(-70%);
+}
+#intro .emj {
+  font-size: 3rem;
+}
+#intro > div #name {
+  font-size: 3.5rem;
+}
+#intro .typed-words,
+#intro .typed-cursor {
+  font-size: 4rem;
+}
+#intro div.before:before {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  background: rgb(255, 255, 5);
+  z-index: -3;
+}
+#intro i {
+  font-style: normal;
+  height: 100px;
+  line-height: 100px;
+  font-size: 2.6rem;
+  bottom: 5%;
+  z-index: 2;
+  cursor: pointer;
+}
+#intro i:before,
+#intro i:after {
+  width: 0px;
+  height: 0px;
+  border-right: 50px solid transparent;
+  border-left: 50px solid transparent;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#intro i:before {
+  border-bottom: 50px solid #fff;
+  top: 0;
+  z-index: -1;
+}
+#intro i:after {
+  border-top: 50px solid rgb(255, 255, 5);
+  bottom: 0;
+  z-index: -1;
+}
+
+/* About 영역 */
+#about {
+  height: 100%;
+}
+
+#about > div {
+  width: 45%;
+  float: left;
+  margin-right: 5%;
+}
+#about > div:last-child {
+  width: 50%;
+  margin: 0;
+}
+
+#about > p {
+  margin-bottom: 50px;
+}
+
+#about img {
+  width: 100%;
+  float: left;
+  margin: 0 0 25px;
+}
+
+#profile_info {
+  width: 750px;
+  padding: 20px 0 0;
+  float: left;
+}
+
+#basic_info span {
+  display: block;
+  float: left;
+}
+
+#basic_info .title {
+  color: #666;
+  font-family: SC_m;
+  font-size: 0.8rem;
+  width: 15%;
+  height: 25px;
+  margin-right: 10px;
+}
+
+#basic_info .des {
+  width: 80%;
+  height: 30px;
+  margin-top: -5px;
+  color: #333;
+  font-family: SC_b;
+  font-size: 1rem;
+}
+
+#introduce .title {
+  font-size: 1.6rem;
+  margin: 5px 0 15px;
+}
+
+#introduce span:nth-child(3) {
+  margin-top: 20px;
+}
+
+#introduce p {
+  font-size: 1.2rem;
+  word-break: keep-all;
+}
+
+.skill {
+  position: relative;
+}
+.title2 {
+  width: 90%;
+}
+
+.skill_bar {
+  width: 100%;
+  height: 15px;
+  margin: 10px 0 5px;
+  cursor: pointer;
+}
+
+.progress_bar {
+  height: 15px;
+  bottom: 0;
+  z-index: 3;
+}
+
+/* Portfolio 영역 */
+#portfolio > div {
+  width: 100%;
+}
+
+#portfolio ul {
+  height: auto;
+  margin-top: 50px;
+}
+
+#portfolio ul li {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  margin-bottom: 160px;
+}
+#portfolio ul li:last-child {
+  margin-bottom: 50px;
+}
+#portfolio ul li article {
+  width: 40%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+#portfolio ul li:nth-child(2n-1) article {
+  right: 0;
+}
+
+#portfolio ul li:nth-child(2n) article {
+  left: 0;
+  text-align: right;
+}
+
+#portfolio ul li article h3 {
+  font-family: SC_bl;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#portfolio ul li article p.SC_b {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+#portfolio ul li article p.SC_r {
+  font-size: 1rem;
+  color: #333;
+}
+
+#portfolio ul li article .btn {
+  margin: 15px 0;
+  width: 160px;
+  height: 50px;
+  border: 3px solid transparent;
+  border-image: linear-gradient(
+    45deg,
+    rgb(255, 255, 5) 10%,
+    rgb(141, 7, 246) 110%
+  );
+  border-image-slice: 1;
+}
+
+.btn .btnbg {
+  width: 0;
+  height: 100%;
+  transition: width 1s;
+}
+
+.btn a {
+  width: 100%;
+  transition: width 1s;
+}
+
+.btn:hover .btnbg {
+  background: linear-gradient(
+    45deg,
+    rgb(255, 255, 5) 10%,
+    rgb(141, 7, 246) 110%
+  );
+  width: 100%;
+}
+
+.btn:hover a {
+  color: #fff;
+  transition: color 1s;
+}
+
+#portfolio ul li > div {
+  width: 60%;
+  height: 100%;
+}
+#portfolio ul li:nth-child(2n-1) > div {
+  left: 0;
+}
+#portfolio ul li:nth-child(2n) > div {
+  right: 0;
+}
+#portfolio ul li .imgbox img {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#portfolio ul li:nth-child(2n) .imgbox img {
+  left: 0;
+}
+
+#portfolio > p {
+  font-size: 3.5rem;
+  margin: 250px 0 40px;
+  background: -webkit-linear-gradient(
+    -90deg,
+    rgb(255, 255, 5) 10%,
+    rgb(141, 7, 246) 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 10px transparent;
+  color: #fff;
+  letter-spacing: 8px;
+}
+
+/* Contact 영역 */
+#contact {
+  width: 100%;
+  height: 90%;
+}
+
+#contact div {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+#contact div p {
+  font-size: 3rem;
+  margin: 20px 0;
+}
+
+/* footer 영역 */
+footer {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  height: 10%;
+}
