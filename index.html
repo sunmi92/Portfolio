@@ -1,16 +1,34 @@
-<!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport"	content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="resource/css/preloader.css" rel="stylesheet" type="text/css" />
     <link href="resource/css/common.css" rel="stylesheet" type="text/css" />
     <link href="resource/css/ani.css" rel="stylesheet" type="text/css" />
     <link href="resource/css/responsive.css" rel="stylesheet" type="text/css" />
-    <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
     <title>Sunmi's Portfolio</title>
   </head>
 
   <body>
+    <!-- PRELOADER PART START -->
+
+    <div class="preloader">
+      <div class="loader_34">
+        <div class="ytp-spinner">
+          <div class="ytp-spinner-container">
+            <div class="ytp-spinner-rotator">
+              <div class="ytp-spinner-left">
+                <div class="ytp-spinner-circle"></div>
+              </div>
+              <div class="ytp-spinner-right">
+                <div class="ytp-spinner-circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER -->>
     <header class="b_yellow f_white fixed">
       <div class="wrap">
         <h1 class="SC_bl f_purple inline-block absolute">
@@ -24,9 +42,9 @@
         </ul>
       </div>
     </header>
-    
+    <div id="contents">
       <section id="intro">
-        <div class="f_purple before relative">
+        <div class="f_purple absolute_center before relative">
           <h2 class="hidden">Introducing</h2>
           <div class="absolute">
             <p class="SC_b f_blue">Hi, There! <span class="emj">👋</span></p>
@@ -292,7 +310,7 @@
       </section>
       <section id="contact" class="relative">
         <h2 class="h2">Contact</h2>
-        <div class="absolute">
+        <div class="wrap absolute">
           <p class="SC_bl center">I hope to meet you soon!</p>
           <p class="SC_bl center upanddown">↓</p>
           <p class="center f_blue">
@@ -302,12 +320,13 @@
           </p>
         </div>
       </section>
-    
+    </div>
     <footer class="relative">
       <p class="SC_bl center absolute_center">ⓒ SUNMI 2020</p>
     </footer>
 
     <script src="resource/js/typed.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="resource/js/script.js"></script>
     <script>
       var typed = new Typed(".typed-words", {
