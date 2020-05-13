@@ -1,4 +1,4 @@
-$(document).ready('on', function () {
+
   // var
   var menu = $("#gnb li");
   var contents = $("#contents > section");
@@ -49,4 +49,3 @@ $(document).ready('on', function () {
       menu.eq(0).addClass("active").siblings().removeClass();
     }
   });
-};
