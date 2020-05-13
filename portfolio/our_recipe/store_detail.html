@@ -1,0 +1,235 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="resource/css/common.css" rel="stylesheet" type="text/css" />
+	<link href="resource/css/store_detail.css" rel="stylesheet" type="text/css" />
+	<link href="resource/css/media.css" rel="stylesheet" type="text/css" />
+	<link href="resource/css/ani.css" rel='stylesheet' type='text/css' />
+	<title>OUR RECIPE - Easy, Funny and Delicious</title>
+</head>
+
+<body onload="init();">
+	<header>
+		<h1>
+			<a href='main.html'><img src='resource/img/logo_1.svg'></a>
+		</h1>
+		<ul id='tnb'>
+			<li><a href='join.html'>JOIN</a></li>
+			<li><a href='login.html'>LOGIN</a></li>
+			<li><a href='#none'>MY PAGE</a></li>
+			<li><a href='cart.html'><img src='resource/img/cart.svg' alt='장바구니'></a></li>
+		</ul>
+		<ul id='gnb'>
+			<li><a href='recipe.html'>RECIPE</a></li>
+			<li><a href='#none'>STORE</a></li>
+			<li><a href='#none'>CHEF</a></li>
+			<li><a href='#none'>EVENT</a></li>
+			<li><a href='#none'>Q&amp;A</a></li>
+		</ul>
+		<a id='footer_open' href='#' class='footer_btn'>▲ FOOTER</a>
+	</header>
+	<div class="wrap">
+		<div class='box'>
+			<div id='item_img'>
+				<img src='resource/img/pro_item1.jpg' alt='item1'> <span class='save'>SAVE 50%</span>
+			</div>
+			<div id='item_info'>
+				<span class='item_brand'>[Friul Trota]</span><br><span class='item_title'>콜드스모크 무지개 송어
+					100g(냉장)</span></br>
+				<p class='item_des'>쫀득하고 짭짤한 훈제 송어</p>
+				<span class='cost'> <span class='price'>29,000원</span><br>
+					<span class='emph'>→</span> <span class='dc'>14,500원</span>
+					<div id='item_detail'>
+						<div>
+							<div class='title inline_block'>판매단위</div>
+							<div class='inline_block'>1개</div>
+						</div>
+						<div>
+							<div class='title inline_block'>중량/용량</div>
+							<div class='inline_block'>100g</div>
+						</div>
+						<div>
+							<div class='title inline_block'>원산지</div>
+							<div class='inline_block'>이탈리아</div>
+						</div>
+						<div>
+							<div class='title inline_block'>배송구분</div>
+							<div class='inline_block'>새벽배송/택배배송</div>
+						</div>
+						<div>
+							<div class='title inline_block'>포장타입</div>
+							<div class='inline_block'>냉장/종이포장</div>
+						</div>
+					</div>
+					<form name="form" method="get">
+						<div>
+							<span>수량</span>
+							<div>
+								<input type="button" value=" - " onclick="del();"><input type=hidden name="sell_price"
+									value="14500"> <input type="text" name="amount" value="1" size="3"
+									onchange="change();"> <input type="button" value=" + " onclick="add();"><br>
+							</div>
+						</div>
+						<div>
+							<span>금액</span>
+							<div>
+								<input type="text" name="sum" size="11" readonly><span>원</span>
+							</div>
+						</div>
+					</form> <br> <input type='button' name='cart' id='cart' onclick="cartBtn()" value='장바구니'> <input
+						type='button' name='cart' id='pay' onclick="payBtn()" value='결제하기'>
+			</div>
+			<div id='tab'>
+				<input type='radio' id='item' name='tab' checked="checked"><label for='item'>상품설명</label> <input
+					type='radio' id='detail' name='tab'><label for='detail'>상세정보</label> <input type='radio' id='review'
+					name='tab'><label for='review'>고객후기</label> <input type='radio' id='qna' name='tab'><label
+					for='qna'>상품문의</label>
+
+				<div class='item'>
+					<img src='resource/img/store_detail1.jpg' alt='상품설명 이미지'>
+					<p class='font_b'>
+						[Friul Trota]</br>콜드모스크 무재고 송어
+					</p>
+					<p class='font_m'>쫀득하고 짭짤한 훈제 송어</p>
+					<p class='font_r'>훈제 생선이라고 하면 대부부느 연어를 가장 먼저 떠올릴 텐데요. 사실 훈제 생선
+						요리의 세계는 무척 넓고도 다채로워요. OUR RECIPE는 다양한 생선중에서 연어와 비슷하면서도 육질이 더 탄탄하고
+						식감이 쫀득한 무지개 송어를 준비했습니다. 친환경 양식을 고집하는 Friul Trotadml의 제품이에요. 유수량이 많은
+						곳에 양식장을 두고 양식 밀도를 낮게 유지하며, 강제 급여를 하지 않아 건강하고 안전한 송어를 생산하죠. 자연적인 상태로
+						자란 송어는 27℃ 이하의 저온에서 훈연하는 전통적인 콜드스모크 방식으로 가공합니다. 송어의 무게나 지방의 양 등에 따라
+						훈연 시간을 조정하기에 상당한 정성이 들어가죠. 풍미가 진한 송어 슬라이스를 도톰하게 돌돌 말아서 드셔보세요. 특유의
+						쫀득함을 더 잘 느낄 수 있을 거에요.</p>
+					<h3 class='before'>Check Point</h3>
+					<div id='checkP'>
+						<p class='check font_m'>비타민A, 칼륨이 풍부한 송어살</p>
+						<p class='check font_m'>無 식품첨가물</p>
+						<p class='check font_m'>자연적인 환경을 고수하는 양식장에서 송어양식</p>
+						<p class='check font_m'>엄격한 관리를 통한 위생적인 생산 공정</p>
+						<p class='check font_m'>전통적인 콜드스모크 가공 방식 사용</p>
+						<p class='check font_m'>연어 대신 즐기는 훈제 생선</p>
+						<p class='check font_m'>1인 가구도 먹기 좋은 소용량 생산</p>
+					</div>
+				</div>
+				<div class='detail'>
+					<h3>[Friul Trota]콜드모스크 무재고 송어</h3>
+					<div id='detail'>
+						<sapn class='chek font_m'>중량 : </sapn>
+						<span class='font_r'>1팩(100g)</span></br>
+						<sapn class='chek font_m'>원재료 : </sapn>
+						<span class='font_r'>무지개 송어 97%, 소금 2.7%, 설탕 0.3%</span></br>
+						<sapn class='chek font_m'>보관법 : </sapn>
+						<span class='font_r'>냉장 보관하시고, 개봉 후에는 가급적 빨리 드세요.</span></br>
+						<sapn class='chek font_m'>특징 : </sapn>
+						<span class='font_r'>별도의 조리 없이 그대로 먹을 수 있는 훈제 송어입니다. 얇고 길쭉하게
+							슬라이스 되어 있어 더욱 간편해요.</span></br>
+						<sapn class='chek font_m'>테이스팅 노트 : </sapn>
+						<span class='font_r'>연어에 비해 쫀득한 식감이 무척 매력적이에요. 맛이 꽤 짭짤한 편이므로
+							빵이나 샐러드, 비스킷 등을 곁들여 드세요.</span></br>
+						<sapn class='chek font_m'>활용팁 : </sapn>
+						<span class='font_r'>드라이한 술이나 담백한 맛의 모짜렐라, 리코타 지즈 등과 페어링
+							해보세요.</span>
+					</div>
+
+				</div>
+				<div class='review'>
+					<p class='font_m check'>상품에 대한 후기를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은
+						사전동의 없이 담당 게시판으로 이동될 수 있습니다.</p>
+					<p class='font_m check'>배송관련, 주문(취소/교환/환불) 관련 문의 및 요청사항은 마이페이지
+						1:1 문의에 남겨주세요.</p>
+					<div>
+						<ul>
+							<li><span class='review_n'>번호</span><span class='review_t'>제목</span><span
+										class='review_w'>작성자</span><span class='review_d'>작성일</span></li>
+							<li><span class='review_n'>공지</span><span class='review_t'>4월 구매 상품 후기 적립금
+										이벤트 안내</span><span class='review_w'>OUR RECIPE</span><span
+										class='review_d'>2020-04-01</span>
+								<div>고객님 안녕하세요, 마켓컬리입니다. 실제 사용 리뷰가 궁금한 리빙/반려동물 상품 4월 구매 후
+									사진 후기를 남겨주시면 적립금 최대 5천원을 지급해드립니다. 1. 적용대상 카테고리: 생활용품/ 주방용품/
+									가전제품/ 반려동물 2. 이벤트 참여 방법 Step 01. 4월 1일부터 4월 30일까지 생활용품, 주방용품,
+									가전제품, 반려동물 카테고리에서 가격이 2만원 이상인 상품을 구매하고 Step 02. 한 달 내에 자세한 후기를
+									상품 사진과 함께 남겨주세요. ex) 4월 30일에 상품 구매 시 5월 30일까지 후기를 남겨주세요. Step
+									03. 구매상품 가격(할인전 상품 판매가)의 1%, 10만원 이상 상품의 경우 5천원의 적립금을 지급해 드려요.
+
+									3. 유의사항 1) 후기 작성 후 1~3일 내에 적립금이 지급됩니다. 2) 구매 상품 외의 사진이 첨부된 경우 후기
+									적립금 정책으로 제공한 적립금이 취소될 수 있습니다. 감사합니다. 마켓컬리 드림</div>
+							</li>
+							<li><span class='review_n'>4</span><span
+										class='review_t'>맛있어요!!!!</span><span class='review_w'>김*아
+									</span><span class='review_d'>2020-04-05 </span>
+								<div>생선이랑 회 안먹는 남편도 맛있었다고 했어요</div>
+							</li>
+							<li><span class='review_n'>3</span><span class='review_t'>송어</span><span
+										class='review_w'>최*희</span><span class='review_d'>2020-04-05</span>
+								<div>너무 맛있어요 샌드위치에 넣었는데 그냥먹어도 맛이 정말 좋아요. 연어랑 비교마세요</div>
+							</li>
+							<li><span class='review_n'>2</span><span class='review_t'>맛있어요<img
+											src='resource/img/file.gif' alt='첨부파일'></span><span
+										class='review_w'>연*선</span><span class='review_d'>2020-04-02</span>
+								<div></div>
+							</li>
+							<li><span class='review_n'>1</span><span class='review_t'>쫄깃쫄깃
+										맛나요</span><span class='review_w'>유*이</span><span
+										class='review_d'>2020-04-01</span>
+								<div>살짝 짠맛이 나기는 하는데 쫄깃함 식감이 좋아요. 앤다이브에 싸서 치즈랑 먹으니..굿입니다.</div>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+				<div class='qna'>
+					<p class='font_m check'>상품에 대한 문의 남기는 공간입니다. 해당 게시판의 성격과 다른 글은
+						사전동의 없이 담당 게시판으로 이동될 수 있습니다.</p>
+					<p class='font_m check'>배송관련, 주문(취소/교환/환불) 관련 문의 및 요청사항은 마이페이지
+						1:1 문의에 남겨주세요.</p>
+					<div>
+						<ul>
+							<li><span class='review_n'>번호</span><span class='review_t'>제목</span><span
+										class='review_w'>작성자</span><span class='review_d'>작성일</span></li>
+							<li><span class='review_n'>공지</span><span class='review_t'>4월 구매 상품 후기 적립금
+										이벤트 안내</span><span class='review_w'>OUR RECIPE</span><span
+										class='review_d'>2020-04-01</span>
+								<div>고객님 안녕하세요, 마켓컬리입니다. 실제 사용 리뷰가 궁금한 리빙/반려동물 상품 4월 구매 후
+									사진 후기를 남겨주시면 적립금 최대 5천원을 지급해드립니다. 1. 적용대상 카테고리: 생활용품/ 주방용품/
+									가전제품/ 반려동물 2. 이벤트 참여 방법 Step 01. 4월 1일부터 4월 30일까지 생활용품, 주방용품,
+									가전제품, 반려동물 카테고리에서 가격이 2만원 이상인 상품을 구매하고 Step 02. 한 달 내에 자세한 후기를
+									상품 사진과 함께 남겨주세요. ex) 4월 30일에 상품 구매 시 5월 30일까지 후기를 남겨주세요. Step
+									03. 구매상품 가격(할인전 상품 판매가)의 1%, 10만원 이상 상품의 경우 5천원의 적립금을 지급해 드려요.
+
+									3. 유의사항 1) 후기 작성 후 1~3일 내에 적립금이 지급됩니다. 2) 구매 상품 외의 사진이 첨부된 경우 후기
+									적립금 정책으로 제공한 적립금이 취소될 수 있습니다. 감사합니다. 마켓컬리 드림</div>
+							</li>
+							<li class='secret'><span class='review_n'>1</span><span
+										class='review_t'>유통기한<img src='resource/img/secret.png' alt='비공개'></span><span
+										class='review_w'>김*아 </span><span class='review_d'>2020-04-05 </span>
+								<div>비공개라 안보이지롱</div>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="resource/js/full-page-scroll.js"></script>
+	<script src="resource/js/count.js"></script>
+	<script src="resource/js/jquery-3.3.1.min.js"></script>
+	<script src="resource/js/script.js"></script>
+	<div id='footer'>
+		<h2>Footer</h2>
+		<a id='footer_close' href='#' class='footer_btn'>▼ FOOTER</a>
+		<ul id='footer_list'>
+			<li><a href='#'>회사소개</a></li>
+			<li><a href='#'>광고문의</a></li>
+			<li><a href='#'>렵력문의</a></li>
+			<li><a href='#'>개인정보처리방침</a></li>
+			<li><a href='#'>이용약관</a></li>
+			<li><a href='#'>고객센터</a></li>
+		</ul>
+		<p id='company'>
+			대표 : 홍길동 | E-mail : ourrecipe@our.recipe | Tel : 02) 123 - 4567 | Fax
+			: 02) 123-4568</br>인천광역시 동구 금송로70번길 8 90-67 8/3 1층
+		</p>
+	</div>
+</body>
+
+</html>

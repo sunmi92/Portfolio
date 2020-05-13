@@ -1,0 +1,215 @@
+#login {
+	width: 336px;
+	margin: 0 auto;
+}
+h3 {
+	text-align: center;
+	font-size: 3rem;
+	padding: 80px 0 50px;
+	font-family: SC_b;
+}
+
+input[type='text'], input[type='password'], input[type='button'] {
+	display: block;
+	width: 800px;
+	margin: 30px auto;
+	padding: 20px 0;
+}
+
+input::placeholder {
+	text-align: center;
+	font-size: 1.4rem;
+}
+
+input[type='checkbox']{
+	margin: 10px 10px 0 0;
+}
+
+label {
+	width: 120px;
+	margin-right: 50px;
+}
+#login label:last-child{
+	margin-right: 0;
+}
+input[type='button'] {
+	font-family: SC_b;
+	font-size: 2rem;
+	background: #333;
+	color: #fff;
+	border: none;
+}
+
+.login {
+	display: block;
+	width: 800px;
+	padding: 20px 0;
+	margin: 30px auto 0;
+	text-align: center;
+	font-family: SC_b;
+	font-size: 2rem;
+	color: #fff;
+}
+
+
+label[for='phoneChk'] {
+	background: #333;
+}
+
+label[for='naver'] {
+	background: #03cf5d;
+}
+
+label[for='google'] {
+	background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+}
+
+label[for='kakao'] {
+	background: rgba(255,238,51,0.99);
+}
+
+input[name='loginChk']{
+	display: none;
+}
+
+.join_common {
+	width: 85%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 15%;
+	z-index: 100;
+	display: none
+}
+
+.join_common div {
+	width: 800px;
+	height: 700px;
+	background: #fff;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+.join_common div > label {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width:30px;
+	height:30px;
+	border-radius: 100%;
+	background: rgb(255,0,0);
+	transform: translate(210%, -40%);
+	color: #fff;
+	text-align: center;
+	font-family: SC_b;
+	font-size: 1.3rem;
+}
+
+.join_common > label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	z-index: 1;
+}
+>div div h3 {
+	padding: 30px 0;
+	text-align: center;
+	font-size: 2rem;
+	font-family: SC_b;
+}
+>div div div {
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	border-top: 3px solid #ccc;
+	border-bottom: 3px solid #ccc;
+	font-size: 1.3rem;
+}
+.join_common div div p {
+	border-bottom: 1px solid #333;
+}
+.join_common div div p label {
+	margin-right: 10px;
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+	padding: 20px 0;
+	background: #eee;
+}
+.join_common div div p input {
+	border:none;
+	border-bottom: 1px solid #ccc;
+}
+.join_common div div p input::placeholder{
+	text-align-last: center;
+}
+
+.join_n {
+	width: 50%;
+}
+.join_bnp {
+	width: 15%
+}
+
+.join_common h3 {
+	font-size: 4rem !important;
+}
+.join_common p {
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 1.4rem;
+}
+.join_common input{
+	display: block;
+	width: 80%;
+	padding: 30px 0;
+	margin: 20px auto;
+	font-size: 2rem;
+}
+.join_common input::placeholder{
+	text-align: center;
+	font-size: 2rem;
+}
+
+
+.join_common input[type='button'] {
+	color: #fff;
+	font-family: SC_b;
+	font-size: 2rem;
+	border:none
+}
+
+input[id='naver']:checked ~ .login1 {
+	display: block;
+}
+input[id='google']:checked ~ .login2 {
+	display: block;
+}
+input[id='kakao']:checked ~ .login3 {
+	display: block;
+}
+
+.login1 h3 {
+	color: #03cf5d;
+}
+.login2 h3 {
+	color: #4387fd;
+}
+.login3 h3 {
+	color: rgba(255,238,51,0.99);
+}
+.login1 input[type='button']{
+	background: #03cf5d;
+}
+.login2 input[type='button']{
+	background: #4387fd;
+}
+.login3 input[type='button']{
+	background: rgba(255,238,51,0.99);
+}

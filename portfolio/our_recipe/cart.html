@@ -1,0 +1,268 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="resource/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="resource/css/cart.css" rel="stylesheet" type="text/css" />
+    <link href="resource/css/media.css" rel="stylesheet" type="text/css" />
+    <link href="resource/css/ani.css" rel='stylesheet' type='text/css' />
+    <title>OUR RECIPE - Easy, Funny and Delicious</title>
+</head>
+
+<body onload="init();">
+    <header>
+        <h1>
+            <a href='main.html'><img src='resource/img/logo_1.svg'></a>
+        </h1>
+        <ul id='tnb'>
+            <li><a href='join.html'>JOIN</a></li>
+            <li><a href='login.html'>LOGIN</a></li>
+            <li><a href='#none'>MY PAGE</a></li>
+            <li><a href='cart.html'><img src='resource/img/cart.svg' alt='장바구니'></a></li>
+        </ul>
+        <ul id='gnb'>
+            <li><a href='recipe.html'>RECIPE</a></li>
+            <li><a href='#none'>STORE</a></li>
+            <li><a href='#none'>CHEF</a></li>
+            <li><a href='#none'>EVENT</a></li>
+            <li><a href='#none'>Q&amp;A</a></li>
+        </ul>
+        <a id='footer_open' href='#' class='footer_btn'>▲ FOOTER</a>
+    </header>
+    <div class="wrap">
+        <div id='my_profile'>
+            <div id='profilePic'></div>
+            <h3 class='font_b'>김아무개</h3></br>
+            <div id='tabmenu'>
+                <input type='radio' name="tab" id='myR'><label for='myR'>
+                    <div id='myRecipe'>
+                        <p class="title font_m">나의 레시피</p>
+                        <p class='number font_r'>123 posted</p>
+                    </div>
+                </label>
+                <input type='radio' name="tab" id='myF'><label for='myF'>
+                    <div id='myFollowing'>
+                        <p class="title font_m">팔로잉</p>
+                        <p class='number font_r'>365 following</p>
+                    </div>
+                </label>
+                <input type="radio" name="tab" id="myFr"><label for="myFr">
+                    <div id='myFollower'>
+                        <p class="title font_m">팔로워</p>
+                        <p class='number font_r'>56 followers</p>
+                    </div>
+                </label>
+                <input type="radio" name="tab" id="cart" checked><label for="cart">
+                    <div id="myCart">
+                        <p class="title font_m">장바구니</p>
+                        <p class="number font_r">1개</p>
+                    </div>
+                </label>
+                <input type="radio" name="tab" id="delivery"><label for="delivery">
+                    <div id='myDeliver'>
+                        <p class="title font_m">배송중</p>
+                        <p class="number font_r">3건</p>
+                    </div>
+                </label>
+                <div id="cont1" class="cont">
+                    <ul class='recipe_list'>
+                        <li><a href='recipe_detail.html'><span class='reco_img'> <img src='resource/img/reco1.jpg'
+                                        class='recipe_img'></span>
+                                <div class='introduce'>
+                                    <p class='title'>달걀 김치볶음밥</p> <span class='cooker'>by.백종원</span>
+                                </div>
+                                <div class='lv_time'>
+                                    <img src='resource/img/level_black.png' alt='난이도'><span>3</span><img
+                                        src='resource/img/alarm_black.png' alt='소요시간'><span>20min</span>
+                                    <img src='resource/img/like.png' alt='좋아요'><span>999+</span>
+                                </div>
+                            </a></li>
+                        <li><a href='#none'><span class='reco_img'> <img src='resource/img/reco2.jpg'
+                                        class='recipe_img'></span>
+                                <div class='introduce'>
+                                    <p class='title'>야끼소바</p> <span class='cooker'>by.백종원</span>
+                                </div>
+                                <div class='lv_time'>
+                                    <img src='resource/img/level_black.png' alt='난이도'><span>3</span><img
+                                        src='resource/img/alarm_black.png' alt='소요시간'><span>20min</span>
+                                    <img src='resource/img/like.png' alt='좋아요'><span>999+</span>
+                                </div>
+                            </a></li>
+                        <li><a href='#none'><span class='reco_img'> <img src='resource/img/reco3.jpg'
+                                        class='recipe_img'> </span>
+                                <div class='introduce'>
+                                    <p class='title'>소고기 카레우동</p> <span class='cooker'>by.백종원</span>
+                                </div>
+                                <div class='lv_time'>
+                                    <img src='resource/img/level_black.png' alt='난이도'><span>3</span><img
+                                        src='resource/img/alarm_black.png' alt='소요시간'><span>20min</span>
+                                    <img src='resource/img/like.png' alt='좋아요'><span>999+</span>
+                                </div>
+                            </a></li>
+                        <li><a href='#none'><span class='reco_img'> <img src='resource/img/reco4.jpg'
+                                        class='recipe_img'> </span>
+                                <div class='introduce'>
+                                    <p class='title'>안동찜닭</p> <span class='cooker'>by.백종원</span>
+                                </div>
+                                <div class='lv_time'>
+                                    <img src='resource/img/level_black.png' alt='난이도'><span>3</span><img
+                                        src='resource/img/alarm_black.png' alt='소요시간'><span>20min</span>
+                                    <img src='resource/img/like.png' alt='좋아요'><span>999+</span>
+                                </div>
+                            </a></li>
+                        <li><a href='#none'><span class='reco_img'> <img src='resource/img/reco5.jpg'
+                                        class='recipe_img'> </span>
+                                <div class='introduce'>
+                                    <p class='title'>전복버터구이</p> <span class='cooker'>by.백종원</span>
+                                </div>
+                                <div class='lv_time'>
+                                    <img src='resource/img/level_black.png' alt='난이도'><span>3</span><img
+                                        src='resource/img/alarm_black.png' alt='소요시간'><span>20min</span>
+                                    <img src='resource/img/like.png' alt='좋아요'><span>999+</span>
+                                </div>
+                            </a></li>
+                        <li><a href='#none'><span class='reco_img'> <img src='resource/img/reco6.jpg'
+                                        class='recipe_img'> </span>
+                                <div class='introduce'>
+                                    <p class='title'>크림 파스타</p> <span class='cooker'>by.백종원</span>
+                                </div>
+                                <div class='lv_time'>
+                                    <img src='resource/img/level_black.png' alt='난이도'><span>3</span><img
+                                        src='resource/img/alarm_black.png' alt='소요시간'><span>20min</span>
+                                    <img src='resource/img/like.png' alt='좋아요'><span>999+</span>
+                                </div>
+                            </a></li>
+                        <li><a href='#none'><span class='reco_img'> <img src='resource/img/reco7.jpg'
+                                        class='recipe_img'> </span>
+                                <div class='introduce'>
+                                    <p class='title'>마파두부덮밥</p> <span class='cooker'>by.백종원</span>
+                                </div>
+                                <div class='lv_time'>
+                                    <img src='resource/img/level_black.png' alt='난이도'><span>3</span><img
+                                        src='resource/img/alarm_black.png' alt='소요시간'><span>20min</span>
+                                    <img src='resource/img/like.png' alt='좋아요'><span>999+</span>
+                                </div>
+                            </a></li>
+                        <li><a href='#none'><span class='reco_img'> <img src='resource/img/reco8.jpg'
+                                        class='recipe_img'> </span>
+                                <div class='introduce'>
+                                    <p class='title'>새송이버섯간장버터구이</p> <span class='cooker'>by.백종원</span>
+                                </div>
+                                <div class='lv_time'>
+                                    <img src='resource/img/level_black.png' alt='난이도'><span>3</span><img
+                                        src='resource/img/alarm_black.png' alt='소요시간'><span>20min</span>
+                                    <img src='resource/img/like.png' alt='좋아요'><span>999+</span>
+                                </div>
+                            </a></li>
+                        <li><a href='#none'><span class='reco_img'> <img src='resource/img/reco9.jpg'
+                                        class='recipe_img'> </span>
+                                <div class='introduce'>
+                                    <p class='title'>토마토카레떡볶이</p> <span class='cooker'>by.백종원</span>
+                                </div>
+                                <div class='lv_time'>
+                                    <img src='resource/img/level_black.png' alt='난이도'><span>3</span><img
+                                        src='resource/img/alarm_black.png' alt='소요시간'><span>20min</span>
+                                    <img src='resource/img/like.png' alt='좋아요'><span>999+</span>
+                                </div>
+                            </a></li>
+                        <li><a href='#none'><span class='reco_img'> <img src='resource/img/reco10.jpg'
+                                        class='recipe_img'> </span>
+                                <div class='introduce'>
+                                    <p class='title'>태국식 시금치 덮밥</p> <span class='cooker'>by.백종원</span>
+                                </div>
+                                <div class='lv_time'>
+                                    <img src='resource/img/level_black.png' alt='난이도'><span>3</span><img
+                                        src='resource/img/alarm_black.png' alt='소요시간'><span>20min</span>
+                                    <img src='resource/img/like.png' alt='좋아요'><span>999+</span>
+                                </div>
+                            </a></li>
+                        <li><a href='#none'><span class='reco_img'> <img src='resource/img/reco11.jpg'
+                                        class='recipe_img'> </span>
+                                <div class='introduce'>
+                                    <p class='title'>베이컨 에그 토스트</p> <span class='cooker'>by.백종원</span>
+                                </div>
+                                <div class='lv_time'>
+                                    <img src='resource/img/level_black.png' alt='난이도'><span>3</span><img
+                                        src='resource/img/alarm_black.png' alt='소요시간'><span>20min</span>
+                                    <img src='resource/img/like.png' alt='좋아요'><span>999+</span>
+                                </div>
+                            </a></li>
+                        <li><a href='#none'><span class='reco_img'> <img src='resource/img/reco12.jpg'
+                                        class='recipe_img'> </span>
+                                <div class='introduce'>
+                                    <p class='title'>꽃게탕</p> <span class='cooker'>by.백종원</span>
+                                </div>
+                                <div class='lv_time'>
+                                    <img src='resource/img/level_black.png' alt='난이도'><span>3</span><img
+                                        src='resource/img/alarm_black.png' alt='소요시간'><span>20min</span>
+                                    <img src='resource/img/like.png' alt='좋아요'><span>999+</span>
+                                </div>
+                            </a></li>
+                    </ul>
+                    <ul id='page_nav'>
+                        <li><a href='#none' class='prev'></a></li>
+                        <li class='act'><span>1</span></li>
+                        <li><span>2</span></li>
+                        <li><span>3</span></li>
+                        <li><span>4</span></li>
+                        <li><span>5</span></li>
+                        <li><a href='#none' class='next'></a></li>
+                    </ul>
+                </div>
+                <div id='cont2' class="cont">
+                    팔로잉 목록이 떠야함
+                </div>
+                <div id='cont3' class="cont">
+                    팔로워 목록이 떠야함
+                </div>
+                <div id='cont4' class="cont">
+                    <input type="checkbox" name="cart" id="prd1"><label for="prd1"><img src="resource/img/pro_item1.jpg"
+                            alt="상품1">
+                        <div class='prd_des'>
+                            <p class='prd_brand'>[Friul Trota]</p>
+                            <p class='prd_title'>콜드스모크
+                                무지개 송어</p>
+                        </div>
+                        <form name="form" method="get">
+                                <div class='quantity'>
+                                    <input type="button" value=" - " onclick="del();"><input type=hidden
+                                        name="sell_price" value="14500"> <input type="text" name="amount" value="1"
+                                        size="3" onchange="change();"> <input type="button" value=" + "
+                                        onclick="add();"><br>
+                                </div>
+                                <div id='sum'>
+                                    <input type="text" name="sum" size="11" readonly><span>원</span>
+                                </div>
+                                </form>
+                                <input type='button' name='cart' id='pay' onclick="payBtn()" value='결제하기'>
+                    </label>
+                </div>
+                <div id='cont5' class='cont'>
+                    배송중 나와야함(시간이 없어 다 하지 못함
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="resource/js/full-page-scroll.js"></script>
+    <script src="resource/js/jquery-3.3.1.min.js"></script>
+    <script src="resource/js/script.js"></script>
+    <script src="resource/js/count.js"></script>
+    <div id='footer'>
+        <h2>Footer</h2>
+        <a id='footer_close' href='#' class='footer_btn'>▼ FOOTER</a>
+        <ul id='footer_list'>
+            <li><a href='#'>회사소개</a></li>
+            <li><a href='#'>광고문의</a></li>
+            <li><a href='#'>렵력문의</a></li>
+            <li><a href='#'>개인정보처리방침</a></li>
+            <li><a href='#'>이용약관</a></li>
+            <li><a href='#'>고객센터</a></li>
+        </ul>
+        <p id='company'>
+            대표홍길동 | E-mailourrecipe@our.recipe | Tel02) 123 - 4567 | Fax
+            02) 123-4568</br>인천광역시 동구 금송로70번길 8 90-67 8/3 1층
+        </p>
+    </div>
+</body>
+
+</html>
