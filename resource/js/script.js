@@ -1,4 +1,4 @@
-$(docunemt).on('ready',function(){
+$(document).on('ready',function(){
   // var
   var menu = $("#gnb li");
   var contents = $("#contents > section");
