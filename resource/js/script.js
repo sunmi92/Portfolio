@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready('on', function () {
   // var
   var menu = $("#gnb li");
   var contents = $("#contents > section");
