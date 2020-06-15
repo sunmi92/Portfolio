@@ -511,9 +511,7 @@ header h1 {
 }
 
 #contact div {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -60%);
+  top: 35%;
 }
 #contact div p {
   font-size: 3rem;
