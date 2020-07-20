@@ -1,6 +1,7 @@
 #footer {
     display: none
 }
-#loading-powered-by{
+#loading-gui #loading-powered-by {
     display: none;
+    transition : 0;
 }
