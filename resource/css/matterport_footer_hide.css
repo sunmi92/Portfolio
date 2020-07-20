@@ -12,6 +12,7 @@
 #nhr {
     bottom: 3px !important;
 }
-#cta-container {
+
+.ctaContainer.showMessage {
     display : none !important;
 }
