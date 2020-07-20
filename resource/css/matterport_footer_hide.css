@@ -12,3 +12,6 @@
 #nhr {
     bottom: 3px !important;
 }
+#cta-container {
+    display : none !important;
+}
