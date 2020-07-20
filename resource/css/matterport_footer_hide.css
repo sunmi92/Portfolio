@@ -1,6 +1,9 @@
 #footer {
     display: none
 }
-#loading-gui #loading-powered-by{
-    transition: none;
+.loading-label{
+    display: none;
+}
+#loading-mp-logo {
+    display: none;
 }
