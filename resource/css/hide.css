@@ -13,6 +13,6 @@
     bottom: 3px !important;
 }
 
-.ctaContainer.showMessage .cta {
+#showcase-modals {
     display : none !important;
 }
